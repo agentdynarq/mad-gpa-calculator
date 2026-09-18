@@ -6,13 +6,12 @@ build/
 .flutter-plugins-dependencies
 pubspec.lock
 
-# Generated platform folders, recreated with `flutter create .`
-/android/
-/ios/
-/web/
-/windows/
-/linux/
-/macos/
+# Android build output. The android/ project itself is committed so the app
+# clones and runs without a `flutter create .` step first.
+/android/.gradle/
+/android/app/build/
+/android/local.properties
+/android/.idea/
 
 # IDE
 .idea/

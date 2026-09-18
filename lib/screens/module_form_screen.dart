@@ -162,6 +162,11 @@ class _ModuleFormScreenState extends State<ModuleFormScreen> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<Grade>(
+              // Flutter renamed this to initialValue after 3.33. Sticking with
+              // value because initialValue does not exist on the older SDKs
+              // this project still declares support for, and value keeps
+              // working on the new ones.
+              // ignore: deprecated_member_use
               value: _grade,
               decoration: const InputDecoration(
                 labelText: 'Grade',

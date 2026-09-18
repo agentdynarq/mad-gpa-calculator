@@ -54,14 +54,13 @@ The grade scale is in one file. A different faculty scale is an edit to
 
 Requires Flutter 3.19 or newer (Dart SDK 3.3).
 
-The platform folders are not committed, since they are generated. Recreate them
-once after cloning:
-
 ```bash
-flutter create .
 flutter pub get
 flutter run
 ```
+
+The Android project is committed, so it runs straight from a clone. Build
+output and `local.properties` are not, since those are specific to one machine.
 
 ## Tests
 
